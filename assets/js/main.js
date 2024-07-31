@@ -1,7 +1,9 @@
 
 (function() {
   "use strict";
-
+  let year = document.querySelector('.year')
+  let py = (new Date()).getFullYear()
+  year.textContent = py;
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
@@ -14,6 +16,8 @@
 
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
+
+  
 
   /**
    * Mobile nav toggle
