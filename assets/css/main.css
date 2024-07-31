@@ -1322,6 +1322,11 @@ section,
   z-index: 3;
 }
 
+@media screen and (max-width: 767px) {
+  .call-to-action .content h3{
+    font-size: 30px;
+  }
+}
 /*--------------------------------------------------------------
 # Onfocus Section
 --------------------------------------------------------------*/
