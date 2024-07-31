@@ -301,7 +301,7 @@ h6 {
 #deep_menu:hover .bi-chevron-down{
   transform: rotate(90deg);
 }
-.navmenu >.dropdown:hover .bi-chevron-down{
+.navmenu > .dropdown:hover .bi-chevron-down{
 transform: rotate(180deg);
 }
 /*--------------------------------------------------------------
@@ -1067,7 +1067,7 @@ section,
   transition: all ease-in-out 0.4s;
   height: 100%;
   border: 1px solid rgba(128, 128, 128, 0.46);
-  border-radius: 5px  0 5px 5px;
+  border-radius: 10px  0 10px 10px;
 }
 
 .featured-services .service-item .icon {
@@ -2157,6 +2157,7 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
 .contact .info {
   background-color: var(--surface-color);
   padding: 40px;
@@ -2249,6 +2250,8 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
 }
+
+
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
