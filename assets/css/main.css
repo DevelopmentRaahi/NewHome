@@ -53,6 +53,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+ 
 }
 
 a {
@@ -954,15 +955,15 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 60vh;
+  min-height: 80vh;
   position: relative;
   padding: 60px 0 60px 0;
   display: flex;
-  align-items: center;
-  
+  align-items: center;  
   background: linear-gradient(to left top, #0c4a6766, #05447b3c),
    url('../newimg/hero/hero-img.jpeg') center center;
     background-size: cover; 
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
     /* background-blend-mode: overlay;  */
 
   /* background-color: rgba(255, 249, 230, 0.278); */
@@ -971,11 +972,13 @@ section,
   border-bottom: 1px solid rgba(128, 128, 128, 0.122);
 }
 
+
 .hero h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 300;
   color: var(--contrast-color);
+ 
 }
 
 .hero h1 span {
