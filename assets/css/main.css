@@ -591,6 +591,10 @@ h6 {
   font-size: 14px;
   position: relative;
 }
+.footer-top .footer-about a span.sitename{
+  color: var(--accent-color);
+  font-size: 30px;
+}
 
 .footer .footer-top {
   background-color: color-mix(in srgb, var(--background-color), white 10%);
