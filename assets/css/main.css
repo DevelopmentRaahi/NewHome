@@ -1900,7 +1900,7 @@ section,
   font-size: 22px;
   line-height: 0;
   transition: 0.3s;
-  color: var(--accent-color);
+  color: var(--nav-dropdown-hover-color);
 }
 
 .faq .faq-container .faq-item .faq-toggle {
