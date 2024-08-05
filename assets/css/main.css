@@ -748,7 +748,48 @@ h6 {
   text-decoration: none;
 }
 
+.footer-subscriber{
+  margin: 5px 0 15px 0;
+}
+.footer-subscriber span:first-child{
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+.footer-subscriber p{
+  width: 70%;  
+}
+.footer-subscriber div:last-child{
+  display: flex;
+  align-items: center;
+}
+.footer-subscriber div {
+  display:flex;
+  align-items: center;
+ 
+}
 
+.footer-subscriber div input{
+ outline: none;
+ padding: 7px 10px;
+ display: inline-block;
+ width: 45%;
+ border: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px 0 0 5px;
+}
+.footer-subscriber div i{
+ color: #ffffff;
+ background-color:#2770b0;
+ display: inline-block;
+ font-size: 17px;
+ padding: 9px 12px;
+ border: 1px solid gray;
+ border-radius: 0 5px 5px 0px;
+
+}
 
 /*--------------------------------------------------------------
 # Preloader
