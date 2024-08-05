@@ -1,4 +1,16 @@
 
+
+// var title = document.title;
+// var isFlash = false;
+// function flashTitle() {
+//   function toggleTitle() {
+//     document.title = isFlash ? 'New Notification (1) ' : title;
+//     isFlash =! isFlash;
+//   }
+//   setInterval(toggleTitle, 1100);
+// }
+// window.onload = flashTitle;
+
 (function() {
   "use strict";
 
