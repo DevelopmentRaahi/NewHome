@@ -1796,6 +1796,10 @@ section,
   border: 1px solid rgba(0,0,0, 0.2);
   padding:  10px 10px;
   border-radius: 8px;
+  transition: 0.3s;
+}
+ .domain-cards:hover{ 
+ box-shadow: 0 7px 12px rgba(0,0,0, 0.1);
 }
 .domain-cards .domain-title{
   font-size: 24px;
