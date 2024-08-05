@@ -1824,7 +1824,7 @@ section,
 }
  .domain-cards{
   border: 1px solid rgba(0,0,0, 0.2);
-  padding:  10px 10px;
+  padding:  1px 10px;
   border-radius: 8px;
   transition: 0.3s;
 }
@@ -1832,10 +1832,10 @@ section,
  box-shadow: 0 7px 12px rgba(0,0,0, 0.1);
 }
 .domain-cards .domain-title{
-  font-size: 24px;
+  font-size: 21px;
   color:var(--nav-hover-color);
-  font-weight: 450 ;  
-  font-family: "Poppins", sans-serif;
+  font-weight: 400 ;  
+  font-family: "Jarkarata", sans-serif;
 }
 .domain-cards p{
   padding: 0 10px ;
