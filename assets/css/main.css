@@ -767,15 +767,14 @@ h6 {
 }
 .footer-subscriber div {
   display:flex;
-  align-items: center;
- 
+  align-items: center; 
 }
 
 .footer-subscriber div input{
  outline: none;
  padding: 7px 10px;
  display: inline-block;
- width: 45%;
+ width: 65%;
  border: transparent;
   border: 1px solid var(--default-color);
   border-radius: 5px 0 0 5px;
