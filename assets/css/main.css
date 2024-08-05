@@ -1782,32 +1782,40 @@ section,
  -------------------------------------------------------------*/
 .price-container{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: 1fr;
   gap: 20px;
 }
+.domain-heading{
+  text-align: center;
+  font-size: 22px;
+  color: #2c353ed5;
+  margin-bottom: 40px;
+}
  .domain-cards{
   border: 1px solid rgba(0,0,0, 0.2);
-  padding:  10px 20px;
+  padding:  10px 10px;
   border-radius: 8px;
 }
 .domain-cards .domain-title{
-  font-size: 20px;
+  font-size: 24px;
   color:var(--nav-hover-color);
   font-weight: 450 ;  
+  font-family: "Poppins", sans-serif;
 }
 .domain-cards p{
   padding: 0 10px ;
 }
 .domain-cards p span:not(:first-child){
   text-decoration: line-through;
-  font-size: 17px;
+  font-size: 15px;
+  color: #373636b3;
 }
 .domain-cards p span:not(:last-child){
-  font-size: 23px;
+  font-size: 20px;
   margin-right: 10px;
   color: orangered;
-  font-weight: 400 ; 
+  font-weight: 450 ; 
 }
 
 
