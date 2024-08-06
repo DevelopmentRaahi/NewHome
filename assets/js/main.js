@@ -15,9 +15,7 @@
   "use strict";
 
   
-  document.addEventListener('scroll', function () {
-    console.log(document.documentElement.scrollTop);
-  })
+ 
   let year = document.querySelector('.year')
   let py = (new Date()).getFullYear()
   year.textContent = py;
