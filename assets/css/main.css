@@ -3598,7 +3598,7 @@ section,
 @media (min-width: 400px)and (max-width: 1024px) {
   .section-title h2{
     font-size: 30px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 }
