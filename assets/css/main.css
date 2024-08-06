@@ -2142,11 +2142,13 @@ section,
   font-size: 21px;
   color: var(--nav-hover-color);
   font-weight: 400;
+  display:block;
   font-family: "Jarkarata", sans-serif;
 }
 
 .domain-cards p {
   padding: 0 10px;
+  
 }
 
 .domain-cards p span:not(:first-child) {
@@ -2197,14 +2199,14 @@ section,
 }
 
 .pricing h4 {
-  font-size: 48px;
+  font-size: 35px;
   color: var(--contrast-color);
   font-weight: 400;
   margin-bottom: 0;
 }
 
 .pricing h4 sup {
-  font-size: 28px;
+  font-size: 21px;
 }
 
 .pricing h4 span {
@@ -2213,7 +2215,7 @@ section,
 }
 
 .pricing ul {
-  padding: 30px 0;
+  padding: 25px 0;
   list-style: none;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   text-align: left;
@@ -2221,7 +2223,7 @@ section,
 }
 
 .pricing ul li {
-  padding: 10px 0;
+  padding: 2px 0;
   display: flex;
   align-items: center;
 }
