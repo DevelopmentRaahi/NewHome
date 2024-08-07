@@ -1578,6 +1578,47 @@ section,
   color: var(--accent-color);
 }
 
+.tab-content .learn-btn {
+  margin-top: 10px;
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 40px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.tab-content .learn-btn::after {
+  content: "";
+  background: var(--accent-color);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  z-index: -1;
+  border-radius: 40px;
+  transition: all 0.5s;
+}
+
+.tab-content .learn-btn:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tab-content .learn-btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
