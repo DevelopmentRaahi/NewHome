@@ -2223,9 +2223,9 @@ section,
 .domain-cards .domain-title {
   font-size: 21px;
   color: var(--nav-hover-color);
-  font-weight: 400;
+  font-weight: 500;
   display:block;
-  font-family: "Jarkarata", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .domain-cards p {
