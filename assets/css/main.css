@@ -2208,9 +2208,12 @@ section,
 
 .domain-cards {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 1px 10px;
+  padding: 4px 10px;
   border-radius: 8px;
   transition: 0.3s;
+}
+.domain-cards a{
+  display: inline-block;
 }
 
 .domain-cards:hover {
