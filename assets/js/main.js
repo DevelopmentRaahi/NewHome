@@ -14,8 +14,6 @@
 
 (function() {
   "use strict"; 
-
-
  
   let year = document.querySelector('.year')
   let py = (new Date()).getFullYear()
