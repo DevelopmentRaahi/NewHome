@@ -7,8 +7,8 @@
 
 :root {
   --background-color: #ffffff;  
-  --default-color: #1a1f24;  
-  --heading-color: #485664; 
+  --default-color: #333;  
+  --heading-color:#003666; 
   --accent-color: #ffa600; 
   --surface-color: #ffffff; 
   --contrast-color: #ffffff;  
