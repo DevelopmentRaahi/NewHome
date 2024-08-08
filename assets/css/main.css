@@ -73,6 +73,28 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+.custom-btns{
+  display: flex;
+  gap: 10px;
+}
+.primary-button{
+  background-color:var(--accent-color);
+  color: var(--default-color);
+  padding: 10px 15px;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: 0.5s;
+  flex: 1 0.5 1;
+  
+}
+.primary-button:hover{
+  background-color: var(--default-color);
+  color: var(--accent-color);
+  border-radius: 0px;
+   
+  
+}
 
 /* ======== pre header section 1======== */
 #pre-main_header {
@@ -1235,7 +1257,7 @@ section,
 }
 
 .hero-one .carousel-item .backdrop {
-  background-color: color-mix(in srgb, #000 40%, #000 40%);
+  background-color: color-mix(in srgb, #000 20%, #000 20%);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1352,17 +1374,6 @@ section,
     visibility: visible;
   }
 }
-@keyframes hideStart {
-  0%{
-    opacity: 0;
-    transform: scale(0);
-   }
-  100%{
-    opacity: 1;
-    transform: scale(1);    
-   }
-  }
-
 
 /* media screen start */
 

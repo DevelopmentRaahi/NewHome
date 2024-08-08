@@ -10,11 +10,12 @@
 //   setInterval(toggleTitle, 1100);
 // }
 // window.onload = flashTitle;
+  // locomotive js
 
 (function() {
-  "use strict";
+  "use strict"; 
 
-  
+
  
   let year = document.querySelector('.year')
   let py = (new Date()).getFullYear()
