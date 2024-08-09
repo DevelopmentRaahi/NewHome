@@ -85,14 +85,14 @@
    * Scroll top button
    */
   let scrollTop = document.querySelector('.scroll-top');
-  let whatsap = document.querySelector('.whatsap_button');
+  let whatsap = document.querySelector('.fix-button a.chat-btn');
 
   function toggleScrollTop() {
     if (scrollTop) {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
     if (whatsap) {
-      window.scrollY > 100 ? whatsap.classList.add('whatsap_button-active') : whatsap.classList.remove('whatsap_button-active');
+      window.scrollY > 100 ? whatsap.classList.add('showbtn') : whatsap.classList.remove('showbtn');
     }
   }
   scrollTop.addEventListener('click', (e) => {

@@ -927,6 +927,7 @@ h6 {
     border-radius: 5px;
     color: var(--surface-color);
     display: flex;
+    visibility: hidden;
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
@@ -956,6 +957,9 @@ h6 {
 .fix-button a.chat-btn:hover{
   background-color:var(--heading-color) ;
   color: var(--background-color);
+}
+.showbtn{
+  visibility: visible !important  ;
 }
 .fix-button a.call_icon {
     background-color: #007bff; 
