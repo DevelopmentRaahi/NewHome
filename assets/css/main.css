@@ -1293,11 +1293,11 @@ section,
   max-width: 100%;
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
   visibility: hidden;
-  animation: slideLeft 0.6s ease-in 0.4s forwards;
+  animation: slideLeft 0.6s ease-in 0.2s forwards;
 }
 .carousel-item .content p {
   color: rgba(255, 255, 255, 0.8);
-  animation: topSlide 0.6s ease-in 0.4s  forwards;
+  animation: topSlide 0.6s ease-in 0.2s  forwards;
   visibility: hidden;
 }
 .carousel-item .content ul li::marker {
@@ -1307,7 +1307,7 @@ section,
   list-style: square;
   color: var(--background-color);
   padding: 0 15px;
-  animation: topSlide 0.6s ease-in 0.4s  forwards;
+  animation: topSlide 0.6s ease-in 0.3s  forwards;
   visibility: hidden;
 }
 .carousel-item .content ul li {
@@ -1322,7 +1322,7 @@ section,
   border: 1px solid transparent;
   transition: all 0.6s;
   visibility: hidden;
-  animation: slideLeft 0.6s ease-in 0.4s  forwards;
+  animation: slideLeft 0.6s ease-in 0.3s  forwards;
   
 }
 .carousel-item .content .btn-hero:hover {
