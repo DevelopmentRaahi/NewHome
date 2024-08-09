@@ -877,6 +877,47 @@ h6 {
   }
 }
 
+.c-details{
+ padding: 50px 5px;
+  background-color: rgb(2, 67, 121);
+ }
+/* .c-details >*{
+  border: 1px solid red;
+} */
+.cd-box{
+  color: var(--background-color);
+  display: flex;
+  gap: 20px;
+ align-items:center;
+}
+.cd-box .cd-icon{
+  color: var(--background-color);
+  display:inline-block;
+}
+.cd-box .cd-icon i{
+  color: var(--color-secondary);
+  background-color: var(--accent-color);
+  padding: 18px 20px ;
+  font-size: 23px;
+  border-radius: 3px;
+}
+
+
+.cd-box:last-child .cd-title{
+  font-size: 20px;
+  font-weight: 500;
+ 
+   display: block;
+}
+.cd-box:last-child .cd-title ~ span{
+  font-size: 14px;
+}
+.cd-box:last-child span{
+  display: block;  
+ 
+}
+
+
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
