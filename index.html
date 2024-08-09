@@ -69,7 +69,7 @@
               <li><a href="https://domgys.in/register-a-domain.html">Register A
                   Domain </a></li>
               <li><a href="https://domgys.in/shared-hosting.html">Best CPanel
-                  shared Hsting in
+                  shared Hosting in
                   India</a></li>
               <li><a href="https://domgys.in/window-shared-hosting.html">Plesh
                   Shared Hosting
@@ -1404,6 +1404,18 @@
 
   </main>
 
+ <div class="fix-button">
+    <a href="#" class="chat-btn" id="toggle-btn" target="_blank">
+        <i class="bi bi-chat-dots"></i> 
+        <!-- <i class="bi bi-x"></i>  -->
+    </a>      
+    <a href="mailto:sales@domgys.com" class="float call_icon" target="_blank">
+        <i class="bi bi-envelope-check my-float"></i>
+    </a>
+    <a href="https://wa.me/918882392962" class="float top-1" target="_blank">
+        <i class="bi bi-whatsapp my-float"></i>
+    </a>  
+</div>
 
   <footer id="footer" class="footer dark-background">
 
@@ -1514,20 +1526,18 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center       justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
-  <!-- <div class="social-fix"> 
-    <i class="bi bi-envelope-check my-float "></i>
-  </div> -->
-  <div class="whatsap_button">
+  <!-- <div class="whatsap_button">    
     <a href="mailto:sales@domgys.com" class="float call_icon" target="_blank">
       <i class="bi bi-envelope-check my-float "></i>
     </a>
     <a href="https://wa.me/918882392962" class="float top-1" target="_blank">
       <i class="bi bi-whatsapp my-float"></i>
     </a>
-  </div>
+  </div> -->
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -1544,8 +1554,19 @@
   
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
 
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggleBtn = document.getElementById('toggle-btn');
+    const chatIcon = toggleBtn.querySelector('.bi-chat-dots');
+    const crossIcon = toggleBtn.querySelector('.bi-x');
+    const floatBtns = document.querySelectorAll('.fix-button a.float');
+    
+  
+  })
+
+</script>
 
 </body>
 

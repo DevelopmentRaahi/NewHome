@@ -911,85 +911,83 @@ h6 {
 }
 
 
-
-/* whatsaap css app */
-.whatsap_button {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.9;
-  transition: all 0.5s;
-  z-index: 300;
-  position: relative;
-  display: none;
+.fix-button {
+    position: relative;
+}
+.fix-button a.chat-btn {
+    position: fixed;
+    display: inline-block;
+    bottom: 63px;
+    right: 16px;
+    z-index: 20;
+    background-color: var(--accent-color);
+    padding: 9px 12px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    color: var(--surface-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
 }
 
-.whatsap_button-active {
-  display: inline-block;
+.fix-button a.float {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 63px;
+    right: 16px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 11;
+    display: block;
+    opacity: 0;
+    transform: translateY(0);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fix-button a.chat-btn:hover{
+  background-color:var(--heading-color) ;
+  color: var(--background-color);
+}
+.fix-button a.call_icon {
+    background-color: #007bff; 
+}
+.fix-button a.top-1 {
+    transform: translateY(-70px); 
+}
+.fix-button a.call_icon {
+    transform: translateY(-130px); 
 }
 
-.whatsap_button:hover {
-  opacity: 1;
-  transition: all 0.5s;
 
-}
-
-.whatsap_button .float {
-  position: fixed;
-  width: 45px;
-  height: 45px;
-  bottom: 68px;
-  right: 16px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 20px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 300;
-  display: grid;
-  animation: blink 1s infinite;
-}
-
-.whatsap_button .float:hover {
-  filter: grayscale(0);
-}
-
-.whatsap_button .call_icon {
-  transition: all 0.5s;
-  background-color: #0787bd;
-}
-
-.whatsap_button .call_icon:hover .bi-telephone-fill {
-  transform: rotate(135deg);
-  transition: all 0.5s;
-}
-
-.whatsap_button .top-1 {
-  bottom: 120px;
-}
-
-.whatsap_button .my-float {
-  align-self: center;
+.fix-button a.chat-btn.cross i.bi-x {
+    display: inline-block;
+    opacity: 1;
 }
 
 @keyframes blink {
   0% {
+    opacity: 0;
+  }
+  40% {
     opacity: 0.5;
   }
 
-  50% {
-    opacity: 0.9;
+  70% {
+    opacity: 0.7;
   }
 
   100% {
-    opacity: 0.5;
+    opacity: 1;
   }
-}
-
-.whatsap_button:hover a {
-  opacity: 1;
-  animation-play-state: paused;
 }
 
 
@@ -2304,7 +2302,7 @@ section,
   color: var(--nav-hover-color);
   font-weight: 500;
   display:block;
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
 }
 
 .domain-cards p {
