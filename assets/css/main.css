@@ -2329,10 +2329,14 @@ section,
   padding: 4px 10px;
   border-radius: 8px;
   transition: 0.3s;
-  width: 100%
+  width: 100%;
+  text-align: center;
+}
+.domain-cards figure{
+  height: 3.5rem;
 }
 .domain-cards figure img{
-  width:80%;
+  width:90%;
   height: auto;
   border-radius:5px;
   margin-bottom: -20px;
@@ -2369,10 +2373,11 @@ section,
 }
 
 .domain-cards p span:not(:last-child) {
-  font-size: 20px;
+  font-size: 2.4rem;
   margin-right: 10px;
   color: orangered;
-  font-weight: 450;
+  display: block;
+  font-weight: 600;
 }
 
 
