@@ -2329,6 +2329,12 @@ section,
   padding: 4px 10px;
   border-radius: 8px;
   transition: 0.3s;
+  width: 100%
+}
+.domain-cards figure img{
+  width:50%;
+  height: auto;
+  border-radius: 5px;
 }
 .domain-cards a{
   display: inline-block;
