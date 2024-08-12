@@ -1764,7 +1764,12 @@ section,
   backface-visibility: hidden;
 }
 .clients a {
-  color: #0a3962;
+  color: #0a3962;  
+}
+
+.clients .what-we-offer a .offer-box{
+  background-color: rgba(230, 170, 4, 0.2);
+  font-size: 1.2rem;
 }
 
 .clients .offer-box:hover, .clients div a:hover {
@@ -2331,6 +2336,7 @@ section,
   transition: 0.3s;
   width: 100%;
   text-align: center;
+  background-color: rgb(230 170 4 / 20%);
 }
 .domain-cards figure{
   height: 3.5rem;
@@ -2339,7 +2345,7 @@ section,
   width:90%;
   height: auto;
   border-radius:5px;
-  margin-bottom: -20px;
+  margin-bottom: -20px; 
 }
 .domain-cards a{
   display: inline-block;
