@@ -2332,9 +2332,10 @@ section,
   width: 100%
 }
 .domain-cards figure img{
-  width:50%;
+  width:70%;
   height: auto;
-  border-radius: 5px;
+  border-radius:5px;
+  margin-bottom: -20px;
 }
 .domain-cards a{
   display: inline-block;
