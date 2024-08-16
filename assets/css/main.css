@@ -345,6 +345,28 @@ h6 {
   display: none;
 }
 
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .close-md-screen{
+   display: none;
+    } 
+    .open-md-screen{
+    display: block;
+  }
+}
+@media (max-width: 1200px)  {
+  .close-md-screen{
+   display: block !important;
+    } 
+  .open-md-screen{
+    display: none;
+  }
+}
+@media (min-width: 1500px) {
+   .open-md-screen{
+    display: none;
+  }
+}
+
 
 @media (max-width: 1200px) {
   .header .logo {
@@ -355,8 +377,11 @@ h6 {
     order: 2;
     margin: 0 15px 0 0;
     padding: 6px 20px;
-    display: none;
+    /* display: none; */
   }
+   .header .close-md-screen{
+    display: none;
+   }
 
   .navmenu .becom-partner {
     display: block;
