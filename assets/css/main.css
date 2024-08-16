@@ -335,7 +335,6 @@ h6 {
 }
 
 .header .btn-getstarted:hover::after {
-
   opacity: 0;
   transform: scaleX(1.4) scaleY(1.5);
 
