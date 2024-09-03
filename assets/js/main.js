@@ -10,10 +10,27 @@
 //   setInterval(toggleTitle, 1100);
 // }
 // window.onload = flashTitle;
-  // locomotive js
+// locomotive js
+  
+
+
+
 
 (function() {
   "use strict"; 
+
+const popUp = document.getElementById('pop-up');
+const backdrop = document.getElementById('backdrop');
+setTimeout(function() {  
+  popUp.style.display = "block"
+  backdrop.style.display = "block"
+  
+}, 2000)
+  
+popUp.addEventListener("click", function () {
+ popUp.style.display = "none"
+ backdrop.style.display = "none"
+})
  
   let year = document.querySelector('.year')
   let py = (new Date()).getFullYear()
