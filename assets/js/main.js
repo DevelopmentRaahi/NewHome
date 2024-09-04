@@ -21,18 +21,26 @@
 const iconClose = document.querySelector('.cancel-icon .bi-x')
 const popUp = document.getElementById('pop-up');
 const backdrop = document.getElementById('backdrop');
+const form = document.querySelector('.pop-up form')
+
 setTimeout(function() {  
   popUp.style.display = "block"
-  backdrop.style.display = "block"
-  
+  backdrop.style.display = "block"  
 }, 2000)
-  
+
+
 iconClose.addEventListener("click", function () { 
   popUp.style.display = "none"
- backdrop.style.display = "none"
+  backdrop.style.display = "none"
+
 })
+ 
   
-  const forms = document.querySelectorAll('.needs-validation')
+  
+  
+//  validation form 
+  
+const forms = document.querySelectorAll('.needs-validation')
 
   // Loop over them and prevent submission
   Array.from(forms).forEach(form => {
