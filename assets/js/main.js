@@ -18,7 +18,7 @@
 
 (function() {
   "use strict"; 
-
+const iconClose = document.querySelector('.cancel-icon .bi-x')
 const popUp = document.getElementById('pop-up');
 const backdrop = document.getElementById('backdrop');
 setTimeout(function() {  
@@ -27,10 +27,28 @@ setTimeout(function() {
   
 }, 2000)
   
-popUp.addEventListener("click", function () {
- popUp.style.display = "none"
+iconClose.addEventListener("click", function () { 
+  popUp.style.display = "none"
  backdrop.style.display = "none"
 })
+  
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+  
+  
+  
+  
  
   let year = document.querySelector('.year')
   let py = (new Date()).getFullYear()
