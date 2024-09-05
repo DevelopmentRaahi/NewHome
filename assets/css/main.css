@@ -3877,6 +3877,8 @@ body{
   font-family: "Poppins", sans-serif;
   transform: scale(0.5) translateX(400px);
   transition: all 0.5s ease;
+  background-image: linear-gradient(to bottom left, #76233970,  #640821ba),url('../img/timer/timer.jpg') ;
+  background-position: center;
 }
 
 
@@ -3897,24 +3899,25 @@ body{
 }
 .pop-up .cancel-icon .bi-x{
 position: absolute;
-top: -10px;
-right: -10px;
-color: rgb(12, 12, 12);
-font-size: 25px;
+top: -25px;
+right: -17px;
+color: rgb(255, 255, 255);
+font-size: 24px;
 font-weight: 600;
-background-color: rgba(255, 255, 255, 0.574);
-border-radius: 50%;
-height: 30px;
-width: 30px;
+/* background-color: rgba(255, 255, 255, 0.4); */
+/* border-radius: 50%; */
+/* height: 40px;
+width: 40px; */
 display: flex;
 justify-content: center;
 align-items: center;
+/* box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); */
 }
 
 
 .pop-up .cancel-icon .bi-x:hover{
-  background-color: rgb(12, 12, 12); 
-  color:  rgba(245, 245, 245, 0.805);
+  /* background-color: rgb(12, 12, 12);  */
+  color:  rgba(245, 245, 245, 0.65);
 }
 .pop-up-start{
   display: flex;
@@ -3988,9 +3991,9 @@ align-items: center;
     right: 10px;
     bottom: 150px;
     transform:  translateX(-5%);
-    padding: 2rem 2rem;
-    
+    padding: 2rem 2rem;    
   }
+  
   
 }
 
@@ -4001,6 +4004,9 @@ align-items: center;
     transform:  translate(0);
     padding: 2rem 1rem;
     width: 80%; 
+  }
+  .pop-up .cancel-icon .bi-x{
+   right: -1px;
   }
   .pop-up-start h4{
     font-size: 2.7rem;
