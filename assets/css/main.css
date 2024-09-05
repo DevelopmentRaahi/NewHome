@@ -3874,12 +3874,6 @@ body{
   height: fit-content;
 }
 
-.pop-up .pop-up_1{
-  background-color: var(--pop-color1);
-}
-.pop-up .pop-up_1{
-  background-color: var(--pop-color1);
-}
 
 #backdrop{
   position: fixed;
@@ -3917,7 +3911,7 @@ align-items: center;
 }
 .pop-up .btn-getlearn{
    color: var(--contrast-color);
-  background: var(--heading-color);
+  background: var(--nav-dropdown-hover-color);
   font-size: 14px;
   padding: 8px 20px;
   margin: 0;
@@ -3925,7 +3919,7 @@ align-items: center;
   transition: 0.3s;
   display: inline-block;
   position: relative;
-  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 @media screen and (max-width: 1120px) {
   .pop-up {
