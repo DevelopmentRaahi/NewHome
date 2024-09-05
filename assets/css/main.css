@@ -3855,25 +3855,23 @@ body{
 
 .pop-up{
   position: fixed;
-  top: 50%;
-  left: 50%;
-  display: none;
+  right: 20px;
+  bottom: 100px;
+  /* display: none; */
   z-index: 1000;
   background-color: rgba(67, 68, 70, 0.995);
-  padding: 5rem 4rem;
+  padding: 1rem 1rem;
   color: #fff;
   border-radius: 10px;
-  transform:  translate(-50%, -50%);
-  transition: all 0.4s ease-in;
+  width: 400px;
+  /* min-width: 80%;
+  max-width: 20%; */
+  height: fit-content;
 }
-#pop-up form label::after{
-  content: "*";
-  color: red;
-  padding-left: 5px;
-}
+
 #backdrop{
   position: fixed;
-  display: none;
+  /* display: none; */
   top: 0;
   left: 0;
   background-color: #00000098;
@@ -3881,47 +3879,47 @@ body{
   width: 100%;
   z-index: 999;
 }
-.pop-up form{
+.pop-up .cancel-icon{
   position: relative;
-
 }
-
 .pop-up .cancel-icon .bi-x{
-position: fixed;
-top: 10px;
+position: absolute;
+top: 0;
 right: 10px;
-display: flex;
 color: rgb(12, 12, 12);
-font-size: 30px;
+font-size: 20px;
 font-weight: 600;
 background-color: rgba(255, 255, 255, 0.574);
 border-radius: 50%;
-height: 40px;
-width: 40px;
-align-items: center;
+height: 20px;
+width: 20px;
+display: flex;
 justify-content: center;
-transition: all 0.6s;
+align-items: center;
+
 }
+
 .pop-up .cancel-icon .bi-x:hover{
   background-color: rgb(12, 12, 12); 
   color:  rgba(245, 245, 245, 0.805);
 }
 @media screen and (max-width: 1120px) {
   .pop-up {
-    top: 20%;
-    left: 10%;
+    /* top: 20%; */
+    right: 0;
+    bottom: 0;
     transform:  translateX(-5%);
-     padding: 2rem 1rem;
+    padding: 2rem 1rem;
      
   }
   
 }
 @media screen and (max-width: 767px) {
   .pop-up {
-    top: 10%;
-    left: 10%;
+    right: 0;
+    bottom: 10%;
     transform:  translateX(-5%);
-     padding: 2rem 1rem;
+    padding: 1rem 1rem;
      
   }
   
