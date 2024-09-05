@@ -3852,14 +3852,19 @@ body{
 }
 
 /* popup code  */
-
+:root{
+  --pop-color1: #e04871;
+  --pop-color2: #F19DB8;
+  --pop-button: #E3557D;
+  --pop-color: #fff;
+}
 .pop-up{
   position: fixed;
   right: 20px;
   bottom: 100px;
   /* display: none; */
   z-index: 1000;
-  background-color: rgba(245, 170, 32, 0.995);
+  background-color: var(--pop-color1);
   padding: 1rem 1rem;
   color: #fff;
   border-radius: 10px;
@@ -3867,6 +3872,13 @@ body{
   /* min-width: 80%;
   max-width: 20%; */
   height: fit-content;
+}
+
+.pop-up .pop-up_1{
+  background-color: var(--pop-color1);
+}
+.pop-up .pop-up_1{
+  background-color: var(--pop-color1);
 }
 
 #backdrop{
