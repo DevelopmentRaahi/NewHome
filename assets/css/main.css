@@ -3864,8 +3864,8 @@ body{
   position: fixed;
   right: 20px;
   bottom: 100px;
-  display: none;
-  /* visibility: hidden; */
+  /* display: none; */
+  visibility: hidden;
   z-index: 1000;
   background-color: var(--pop-color1);
   padding: 2rem 1.4rem;
@@ -3875,20 +3875,21 @@ body{
   opacity: 0;
   height: fit-content;
   font-family: "Poppins", sans-serif;
-  transition: transform 1s linear;
-  transform: scale(0.8) ;
+  transform: scale(0.5) translateX(400px);
+  transition: all 0.5s ease;
 }
 
 
 #backdrop{
   position: fixed;
-  display: none;
+  visibility: hidden;
   top: 0;
   left: 0;
   background-color: #000000a9;
   height: 100vh;
   width: 100%;
   z-index: 999;
+  transition: visibility 0.2s ease;
 }
 .pop-up .cancel-icon{
   position: relative;
@@ -3924,7 +3925,7 @@ align-items: center;
 }
 .pop-up-start h4{
   color: var(--pop-color);
-  font-size: 3rem;
+  font-size: 3.3rem;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
@@ -3972,10 +3973,14 @@ align-items: center;
   background:#03559d ;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+#backdrop.show{
+  opacity: 1;
+  visibility: visible;
+}
 .pop-up.show{
   opacity: 1;
-  display: block;
-  transform: scale(1);
+  visibility: visible;
+  transform: scale(.9) translateX(0);
 }
 @media screen and (max-width: 1120px) {
   .pop-up {
@@ -3984,7 +3989,7 @@ align-items: center;
     bottom: 150px;
     transform:  translateX(-5%);
     padding: 2rem 2rem;
-     
+    
   }
   
 }
@@ -4006,7 +4011,7 @@ align-items: center;
   .pop-up-start{
     gap: 5px;
   }
-  .pop-up-start .timer .minute,
+.pop-up-start .timer .minute,
 .pop-up-start .timer .second {
   font-size: 2.3rem;
 }

@@ -24,18 +24,16 @@ const backdrop = document.getElementById('backdrop');
 const form = document.querySelector('.pop-up form')
 
 setTimeout(function() {  
-  // popUp.style.display = "block"
-  // backdrop.style.display = "block"  
+   
   popUp.classList.add('show')
-  backdrop.style.display = "block";
+  backdrop.classList.add('show')
 }, 2000)
 
 
 iconClose.addEventListener("click", function () { 
-  // popUp.style.display = "none"
-  // backdrop.style.display = "none"
+ 
   popUp.classList.remove('show')
-  backdrop.style.display = "none";
+  backdrop.classList.remove('show')
 
 })
  
