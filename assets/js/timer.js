@@ -17,7 +17,6 @@ function startCountdown(minutes, seconds) {
     // Stop the timer when it reaches zero
     if (remainingTime <= 0) {
       clearInterval(countdownInterval);
-      alert("The offer has expired!"); // Alert on expiry
       closePopup(); // Optionally hide the pop-up
     }
 
