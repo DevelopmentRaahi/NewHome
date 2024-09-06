@@ -6,7 +6,10 @@ setTimeout(function() {
   popUp.classList.add('show')
   backdrop.classList.add('show')
 }, 2000)
-
+window.addEventListener("click", function () { 
+  popUp.classList.remove('show')
+  backdrop.classList.remove('show')
+})
 
 iconClose.addEventListener("click", function () { 
   popUp.classList.remove('show')
