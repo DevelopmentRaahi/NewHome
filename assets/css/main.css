@@ -3913,6 +3913,7 @@ width: 40px; */
 display: flex;
 justify-content: center;
 align-items: center;
+cursor: pointer;
 /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); */
 }
 
@@ -3930,8 +3931,8 @@ align-items: center;
 }
 .pop-up-start h4{
   color: var(--pop-color);
-  font-size: 3.3rem;
-  font-weight: 700;
+  font-size: 2.6rem;
+  font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
 .pop-up-start p{
@@ -3943,6 +3944,7 @@ align-items: center;
 .pop-up-start a + p{
   margin-top: 10px;
   color: #ffffffb6;
+  cursor: pointer;
 }
 .pop-up-start .timer {
   font-size: 3rem;
@@ -3964,8 +3966,8 @@ align-items: center;
 .pop-up .btn-getlearn{
   color: var(--background-color);
   background: var(--heading-color);
-  font-size: 17px;
-  padding: 8px 20px;
+  font-size: 16px;
+  padding: 10px 20px;
   border-radius: 10px;
   margin-top: 20px;
   transition: 0.3s;
@@ -4014,9 +4016,12 @@ align-items: center;
    right: -1px;
   }
   .pop-up-start h4{
-    font-size: 2.7rem;
+    font-size: 2rem;
   }
-  .pop-up-start p{
+  .pop-up-start h4 + p{
+  font-size: 0.9rem;
+}
+  .pop-up-start a + p{
     font-size: .8rem;
   }
   .pop-up-start{

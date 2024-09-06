@@ -1,6 +1,8 @@
 const iconClose = document.querySelector('.cancel-icon .bi-x')
 const popUp = document.getElementById('pop-up');
 const backdrop = document.getElementById('backdrop');
+const discountPopup = document.getElementById('discountPopup');
+const paraClose = document.getElementById('closePopup')
 setTimeout(addPopup, 2000)
 function addPopup() {     
   popUp.classList.add('show')
@@ -12,12 +14,8 @@ function showRemover() {
     
 }
 
-window.addEventListener("click", showRemover);
-
-popUp.addEventListener('click', function (e) {
-  e.stopPropagation(); 
-  iconClose.addEventListener("click", showRemover);
-} )
+iconClose.addEventListener("click", showRemover);
+paraClose.addEventListener("click", showRemover);
 
 function startCountdown(minutes, seconds) {
   const timerDisplay = document.querySelector(".timer");
