@@ -3967,7 +3967,7 @@ align-items: center;
   margin-top: 20px;
   transition: 0.3s;
   display:block; 
-  box-shadow: 0 5px 5px rgba(15, 14, 14, 0.4)
+  box-shadow: 0 5px 5px rgba(15, 14, 14, 0.4),
   -5px -5px 5px rgba(34, 34, 34, 0.4);
   max-width: 90%;
   min-width: 80%;
