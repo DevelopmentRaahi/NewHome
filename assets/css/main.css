@@ -3937,6 +3937,9 @@ align-items: center;
 .pop-up-start p{
   font-size: 0.9rem;
 }
+.pop-up-start h4 + p{
+  font-size: 1.1rem;
+}
 .pop-up-start a ~ p{
   margin-top: 10px;
   color: #ffffffb6;
