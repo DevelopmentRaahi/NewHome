@@ -1,18 +1,23 @@
 const iconClose = document.querySelector('.cancel-icon .bi-x')
 const popUp = document.getElementById('pop-up');
 const backdrop = document.getElementById('backdrop');
-
-setTimeout(function() {     
+setTimeout(addPopup, 2000)
+function addPopup() {     
   popUp.classList.add('show')
   backdrop.classList.add('show')
-}, 2000)
+}
 function showRemover() {
   popUp.classList.remove('show')
   backdrop.classList.remove('show')
+    
 }
 
 window.addEventListener("click", showRemover);
-iconClose.addEventListener("click", showRemover);
+
+popUp.addEventListener('click', function (e) {
+  e.stopPropagation(); 
+  iconClose.addEventListener("click", showRemover);
+} )
 
 function startCountdown(minutes, seconds) {
   const timerDisplay = document.querySelector(".timer");
