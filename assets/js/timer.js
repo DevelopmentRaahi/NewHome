@@ -6,15 +6,14 @@ setTimeout(function() {
   popUp.classList.add('show')
   backdrop.classList.add('show')
 }, 2000)
-window.addEventListener("click", function () { 
+function showRemover() {
   popUp.classList.remove('show')
   backdrop.classList.remove('show')
-})
+}
 
-iconClose.addEventListener("click", function () { 
-  popUp.classList.remove('show')
-  backdrop.classList.remove('show')
-})
+window.addEventListener("click", showRemover);
+iconClose.addEventListener("click", showRemover);
+
 function startCountdown(minutes, seconds) {
   const timerDisplay = document.querySelector(".timer");
   let remainingTime = minutes * 60 + seconds; // Total time in seconds
