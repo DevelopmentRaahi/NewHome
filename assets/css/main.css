@@ -3877,7 +3877,7 @@ body{
   font-family: "Poppins", sans-serif;
   transform: scale(0.5) translateX(400px);
   transition: all 0.5s ease;
-  background-image: linear-gradient(to bottom left, #161415c4,  #1f0b11b7),url('../img/timer/timer.jpg')  ; 
+  background-image: linear-gradient(to bottom left, #161415aa,  #511d2cb7),url('../img/timer/timer.jpg')  ; 
   background-position: center;
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.193);
   

@@ -18,26 +18,7 @@
 
 (function() {
   "use strict"; 
-const iconClose = document.querySelector('.cancel-icon .bi-x')
-const popUp = document.getElementById('pop-up');
-const backdrop = document.getElementById('backdrop');
-const form = document.querySelector('.pop-up form')
-
-setTimeout(function() {  
-   
-  popUp.classList.add('show')
-  backdrop.classList.add('show')
-}, 2000)
-
-
-iconClose.addEventListener("click", function () { 
  
-  popUp.classList.remove('show')
-  backdrop.classList.remove('show')
-
-})
- 
-  
   
   
 //  validation form 

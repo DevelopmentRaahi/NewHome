@@ -1,3 +1,17 @@
+const iconClose = document.querySelector('.cancel-icon .bi-x')
+const popUp = document.getElementById('pop-up');
+const backdrop = document.getElementById('backdrop');
+
+setTimeout(function() {     
+  popUp.classList.add('show')
+  backdrop.classList.add('show')
+}, 2000)
+
+
+iconClose.addEventListener("click", function () { 
+  popUp.classList.remove('show')
+  backdrop.classList.remove('show')
+})
 function startCountdown(minutes, seconds) {
   const timerDisplay = document.querySelector(".timer");
   let remainingTime = minutes * 60 + seconds; // Total time in seconds
@@ -26,9 +40,10 @@ function startCountdown(minutes, seconds) {
 
 function closePopup() {
   document.getElementById("discountPopup").style.display = "none";
+  document.getElementById("backdrop").style.display = "none";
 }
 
 
 window.onload = function () {
-  startCountdown(15, 45); 
+  startCountdown(15, 59); 
 };
