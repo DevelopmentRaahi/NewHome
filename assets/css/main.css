@@ -4126,5 +4126,8 @@ cursor: pointer;
     width: 95%;
     bottom: 10px;  
   }
+  .s-pop-content .s-pop-heading{
+    font-size: 1.2rem;
+  }
   
  }
