@@ -4129,5 +4129,9 @@ cursor: pointer;
   .s-pop-content .s-pop-heading{
     font-size: 1.2rem;
   }
+  .s-pop-content + .s-pop-close .bi-x{
+  top: 0;
+  right: 0;
+  }
   
  }
