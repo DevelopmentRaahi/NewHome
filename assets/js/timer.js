@@ -3,7 +3,8 @@ const popUp = document.getElementById('pop-up');
 const backdrop = document.getElementById('backdrop');
 const discountPopup = document.getElementById('discountPopup');
 const paraClose = document.getElementById('closePopup')
-setTimeout(addPopup, 2000)
+setTimeout(addPopup, 10000)
+
 function addPopup() {     
   popUp.classList.add('show')
   backdrop.classList.add('show')
@@ -41,7 +42,11 @@ function startCountdown(minutes, seconds) {
 
     remainingTime--; 
   }, 1000); 
+  
+  
 }
+
+
 
 function closePopup() {
   document.getElementById("discountPopup").style.display = "none";
@@ -50,7 +55,7 @@ function closePopup() {
 
 
 window.onload = function () {
-  startCountdown(15, 59); 
+  startCountdown(16, 9); 
 };
 
 // 2nd pop
@@ -58,7 +63,7 @@ const bottomPop = document.querySelector('.s-popup-container')
 const secondClose = document.getElementById('closeSecond')
 setTimeout(function () {
   bottomPop.classList.add('visible')
-}, 3000)
+}, 1000)
 
 secondClose.addEventListener("click", ()=> {  
     bottomPop.classList.remove('visible')
