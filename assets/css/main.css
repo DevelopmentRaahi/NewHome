@@ -4101,7 +4101,7 @@ cursor: pointer;
 
  .s-pop-content + .s-pop-close .bi-x{
   color: #afacac;
-  font-size: 24px; 
+  font-size: 20px; 
   position: absolute;
   right: 10px;
   top: 10px;
@@ -4115,8 +4115,8 @@ cursor: pointer;
  }
  @media screen and (max-width: 700px) {
   .s-pop-content .s-pop-btn a{
-    padding: 0.5rem .7rem;
-    font-size: 15px;
+    padding: 0.5rem .5rem;
+    font-size: 12px;
     margin-top: 10px;
   }
   .s-popup-container .s-pop-content{
@@ -4127,11 +4127,12 @@ cursor: pointer;
     bottom: 10px;  
   }
   .s-pop-content .s-pop-heading{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .s-pop-content + .s-pop-close .bi-x{
   top: 0;
   right: 0;
+  text-align: center;
   }
   
  }
