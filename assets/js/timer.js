@@ -52,3 +52,14 @@ function closePopup() {
 window.onload = function () {
   startCountdown(15, 59); 
 };
+
+// 2nd pop
+const bottomPop = document.querySelector('.s-popup-container')
+const secondClose = document.getElementById('closeSecond')
+setTimeout(function () {
+  bottomPop.classList.add('visible')
+}, 3000)
+
+secondClose.addEventListener("click", ()=> {  
+    bottomPop.classList.remove('visible')
+})
