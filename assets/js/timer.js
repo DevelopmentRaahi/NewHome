@@ -55,7 +55,7 @@ function closePopup() {
 
 
 window.onload = function () {
-  startCountdown(16, 9); 
+  startCountdown(16, 0); 
 };
 
 // 2nd pop
