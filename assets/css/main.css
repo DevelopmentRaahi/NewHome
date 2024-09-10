@@ -3863,11 +3863,16 @@ body{
   --pop-color: #fff;
 }
 
-
+#discountPopup{
+  position: relative;
+}
 .pop-up{
   position: fixed;
-  right: 20px;
-  bottom: 100px;
+  /* right: 20px;
+  bottom: 100px; */
+  top: 50%;
+  left: 50%;
+  transform:  scale(0.4) translate(-50% ,-50%);
   /* display: none; */
   visibility: hidden;
   z-index: 1000;
@@ -3879,7 +3884,6 @@ body{
   opacity: 0;
   height: fit-content;
   font-family: "Poppins", sans-serif;
-  transform: scale(0.5) translateX(400px);
   transition: all 0.5s ease;
   background-image: linear-gradient(to bottom left, #161415aa,  #511d2cb7),url('../img/timer/timer.jpg')  ; 
   background-position: center;
@@ -3995,14 +3999,13 @@ cursor: pointer;
 .pop-up.show{
   opacity: 1;
   visibility: visible;
-  transform: scale(.9) translateX(0);
+  transform: scale(1) translate(-50%, -50%);
+ 
 }
 @media screen and (max-width: 1120px) {
   .pop-up {
     /* top: 20%; */
-    right: 10px;
-    bottom: 150px;
-    transform:  translateX(-5%);
+   
     padding: 2rem 2rem;    
   }
   
@@ -4011,9 +4014,9 @@ cursor: pointer;
 
 @media screen and (max-width: 767px) {
   .pop-up {
-    right: 10%;
+    /* right: 10%;
     bottom: 20%;
-    transform:  translate(0);
+    transform:  translate(0); */
     padding: 2rem 1rem;
     width: 80%; 
   }

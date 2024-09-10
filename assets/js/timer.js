@@ -3,7 +3,7 @@ const popUp = document.getElementById('pop-up');
 const backdrop = document.getElementById('backdrop');
 const discountPopup = document.getElementById('discountPopup');
 const paraClose = document.getElementById('closePopup')
-setTimeout(addPopup, 10000)
+setTimeout(addPopup, 5000)
 
 function addPopup() {     
   popUp.classList.add('show')
@@ -59,12 +59,12 @@ window.onload = function () {
 };
 
 // 2nd pop
-const bottomPop = document.querySelector('.s-popup-container')
-const secondClose = document.getElementById('closeSecond')
-setTimeout(function () {
-  bottomPop.classList.add('visible')
-}, 1000)
+// const bottomPop = document.querySelector('.s-popup-container')
+// const secondClose = document.getElementById('closeSecond')
+// setTimeout(function () {
+//   bottomPop.classList.add('visible')
+// }, 1000)
 
-secondClose.addEventListener("click", ()=> {  
-    bottomPop.classList.remove('visible')
-})
+// secondClose.addEventListener("click", ()=> {  
+//     bottomPop.classList.remove('visible')
+// })
