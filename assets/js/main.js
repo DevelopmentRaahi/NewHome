@@ -4,18 +4,6 @@
 (function() {
   "use strict"; 
 
- let bubbles = document.querySelector(".models");
- (function bubblesVisible () {
-  let bublleVisible = setInterval(function () {
-    if (bubbles) {
-      bubbles.classList.add("visibles"); 
-   }
-  }, 2000)
-      
-})()
-
-  
-  
 //  validation form 
   
 const forms = document.querySelectorAll('.needs-validation')
