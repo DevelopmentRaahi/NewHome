@@ -1,24 +1,19 @@
 
 
-// var title = document.title;
-// var isFlash = false;
-// function flashTitle() {
-//   function toggleTitle() {
-//     document.title = isFlash ? 'New Notification (1) ' : title;
-//     isFlash =! isFlash;
-//   }
-//   setInterval(toggleTitle, 1100);
-// }
-// window.onload = flashTitle;
-// locomotive js
-  
-
-
-
 
 (function() {
   "use strict"; 
- 
+
+ let bubbles = document.querySelector(".models");
+ (function bubblesVisible () {
+  let bublleVisible = setInterval(function () {
+    if (bubbles) {
+      bubbles.classList.add("visibles"); 
+   }
+  }, 2000)
+      
+})()
+
   
   
 //  validation form 
