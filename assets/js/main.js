@@ -24,7 +24,7 @@
                   Hosting</a>
               </li>
               <li><a href="https://domgys.in/business-hosting.html">
-                  Business hoting Sevice
+                   Business Hosting Service
                   </a>
               </li>
               <li>
