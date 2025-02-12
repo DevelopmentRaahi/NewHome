@@ -1,48 +1,6 @@
-
-
-
 (function () {
   ("use strict");
   // dropdown update
-
-  var dropdown = document.querySelector(".navmenu li ul");
-  function additem() {
-    if (dropdown) {
-      dropdown.innerHTML = `    
-              <li><a href="https://domgys.in/register-a-domain.html">Register A
-                  Domain </a>
-              </li>
-              <li><a href="https://domgys.in/shared-hosting.html">CPanel
-                  shared Hosting </a>
-              </li>
-              <li><a href="https://domgys.in/window-shared-hosting.html">Plesh
-                  Shared Hosting
-                </a>
-              </li>
-              <li><a href="https://domgys.in/wordpress-hosting.html">
-                  Wordpress
-                  Hosting</a>
-              </li>
-              <li><a href="https://domgys.in/business-hosting.html">
-                   Business Hosting Service
-                  </a>
-              </li>
-              <li>
-                <a href="https://domgys.in/transfer-your-domain.html">Transfer
-                  Your Domain </a>
-              </li>
-              <li>
-                <a href="https://domgys.in/domain-pricing.php">Check
-                  Domain Pricing</a>
-              </li>
-              <li><a href="https://domgys.in/reseller-hosting.html"> Shared
-                  cloud Linux
-                  Hosting</a>
-              </li>
-    `;
-    }
-  }
-  dropdown && additem();
 
   //  validation form
   const forms = document.querySelectorAll(".needs-validation");
@@ -304,4 +262,3 @@
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
 })();
-
