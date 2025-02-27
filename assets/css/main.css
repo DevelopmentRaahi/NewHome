@@ -1169,7 +1169,7 @@ section,
   display: flex;
   align-items: center;
   background: linear-gradient(to left top, #0c4a6766, #05447b3c),
-    url('../newimg/hero/hero-img.jpeg') center center;
+    url('../newimg/hero/hero-img.webp') center center;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   /* background-blend-mode: overlay;  */
@@ -1644,7 +1644,7 @@ section,
   position: absolute;
   inset: -60px 0 0 -60px;
   content: "";
-  background: url("../img/about-bg.png") top left;
+  background: url("../img/about-bg.webp") top left;
   background-repeat: no-repeat;
   z-index: 1;
 }
@@ -1971,12 +1971,12 @@ section,
 
 .onfocus .video-play {
   min-height: 400px;
-  background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), color-mix(in srgb, var(--background-color), transparent 75%)), url("../img/onfocus-video-bg.jpg") center center;
+  background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), color-mix(in srgb, var(--background-color), transparent 75%)), url("../img/onfocus-video-bg.webp") center center;
   background-size: cover;
 }
 
 .onfocus .content {
-  background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), color-mix(in srgb, var(--background-color), transparent 75%)), url("../img/onfocus-content-bg.jpg") center center;
+  background: linear-gradient(color-mix(in srgb, var(--background-color), transparent 90%), color-mix(in srgb, var(--background-color), transparent 75%)), url("../img/onfocus-content-bg.webp") center center;
   background-size: cover;
   padding: 40px;
 }
@@ -2434,7 +2434,7 @@ section,
 
 .pricing .pricing-header {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
-    url("../newimg/hero/hero-img.jpeg") center center;
+    url("../newimg/hero/hero-img.webp") center center;
   background-size: cover;
   text-align: center;
   padding: 40px;
@@ -2527,7 +2527,7 @@ section,
   background: linear-gradient(
     color-mix(in srgb, var(--nav-hover-color), transparent 10%), 
     color-mix(in srgb, var(--nav-hover-color), transparent 20%)),
-    url("../img/pricing-bg.jpg") center center;
+    url("../img/pricing-bg.webp") center center;
 }
 
 .pricing .featured .buy-btn {
@@ -3885,7 +3885,7 @@ body{
   height: fit-content;
   font-family: "Poppins", sans-serif;
   transition: all 0.5s ease;
-  background-image: linear-gradient(to bottom left, #161415aa,  #511d2cb7),url('../img/timer.jpg')  ; 
+  background-image: linear-gradient(to bottom left, #161415aa,  #511d2cb7),url('../img/timer.webp')  ; 
   background-position: center;
   box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.193);
   border: 1px solid #fff;

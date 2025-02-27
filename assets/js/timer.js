@@ -1,4 +1,5 @@
-(function () {
+"use strict";
+function Countdown(minutes, seconds) {
   const iconClose = document.querySelector(".cancel-icon .bi-x");
   const popUp = document.getElementById("pop-up");
   const backdrop = document.getElementById("backdrop");
@@ -20,7 +21,7 @@
 
   function startCountdown(minutes, seconds) {
     const timerDisplay = document.querySelector(".timer");
-    let remainingTime = minutes * 60 + seconds; // Total time in seconds
+    let remainingTime = Number(minutes * 60 + seconds); // Total time in seconds
 
     const countdownInterval = setInterval(function () {
       const mins = Math.floor(remainingTime / 60);
@@ -45,19 +46,20 @@
     document.getElementById("discountPopup").style.display = "none";
     document.getElementById("backdrop").style.display = "none";
   }
+  startCountdown(minutes, seconds);
+}
 
-  window.onload = function () {
-    startCountdown(16, 0);
-  };
+// window.onload = function () {
+//   Countdown(16, 0);
+// };
 
-  // 2nd pop
-  // const bottomPop = document.querySelector('.s-popup-container')
-  // const secondClose = document.getElementById('closeSecond')
-  // setTimeout(function () {
-  //   bottomPop.classList.add('visible')
-  // }, 1000)
+// 2nd pop
+// const bottomPop = document.querySelector('.s-popup-container')
+// const secondClose = document.getElementById('closeSecond')
+// setTimeout(function () {
+//   bottomPop.classList.add('visible')
+// }, 1000)
 
-  // secondClose.addEventListener("click", ()=> {
-  //     bottomPop.classList.remove('visible')
-  // })
-})();
+// secondClose.addEventListener("click", ()=> {
+//     bottomPop.classList.remove('visible')
+// })
