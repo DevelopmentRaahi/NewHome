@@ -1,65 +1,42 @@
 "use strict";
-function Countdown(minutes, seconds) {
-  const iconClose = document.querySelector(".cancel-icon .bi-x");
-  const popUp = document.getElementById("pop-up");
-  const backdrop = document.getElementById("backdrop");
-  const discountPopup = document.getElementById("discountPopup");
-  const paraClose = document.getElementById("closePopup");
-  setTimeout(addPopup, 5000);
+// stats
+document.addEventListener("DOMContentLoaded", function () {
+  const statsSection = document.querySelector("#onfocus");
+  const counters = document.querySelectorAll("#counter-item b");
+  let hasAnimated = false; // To prevent multiple animations
 
-  function addPopup() {
-    popUp.classList.add("show");
-    backdrop.classList.add("show");
-  }
-  function showRemover() {
-    popUp.classList.remove("show");
-    backdrop.classList.remove("show");
-  }
+  function animateCounters() {
+    counters.forEach((counter) => {
+      const target = +counter.getAttribute("data-target");
+      let count = 0;
+      const speed = target / 100; // Adjust speed
+      // console.log(speed);
+      
 
-  iconClose.addEventListener("click", showRemover);
-  paraClose.addEventListener("click", showRemover);
+      const updateCount = () => {
+        if (count < target) {
+          count += speed;  
+          counter.innerText = ` ${Math.ceil(count)}`;
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target;
+          if (target >= 120) {
+            counter.innerText += "+ "; // Add "+" only if target > 120
+          }
+        }
+      };
 
-  function startCountdown(minutes, seconds) {
-    const timerDisplay = document.querySelector(".timer");
-    let remainingTime = Number(minutes * 60 + seconds); // Total time in seconds
-
-    const countdownInterval = setInterval(function () {
-      const mins = Math.floor(remainingTime / 60);
-      const secs = remainingTime % 60;
-
-      const formattedMinutes = mins < 10 ? "0" + mins : mins;
-      const formattedSeconds = secs < 10 ? "0" + secs : secs;
-
-      timerDisplay.querySelector("#minutes").textContent = formattedMinutes;
-      timerDisplay.querySelector("#seconds").textContent = formattedSeconds;
-
-      if (remainingTime <= 0) {
-        clearInterval(countdownInterval);
-        closePopup();
-      }
-
-      remainingTime--;
-    }, 1000);
+      updateCount();
+    });
   }
 
-  function closePopup() {
-    document.getElementById("discountPopup").style.display = "none";
-    document.getElementById("backdrop").style.display = "none";
+  function checkScroll() {
+    const rect = statsSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom >= 0 && !hasAnimated) {
+      animateCounters();
+      hasAnimated = true; // Run only once
+    }
   }
-  startCountdown(minutes, seconds);
-}
 
-// window.onload = function () {
-//   Countdown(16, 0);
-// };
-
-// 2nd pop
-// const bottomPop = document.querySelector('.s-popup-container')
-// const secondClose = document.getElementById('closeSecond')
-// setTimeout(function () {
-//   bottomPop.classList.add('visible')
-// }, 1000)
-
-// secondClose.addEventListener("click", ()=> {
-//     bottomPop.classList.remove('visible')
-// })
+  window.addEventListener("scroll", checkScroll);
+});
