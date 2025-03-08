@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (count < target) {
           count += speed;  
           counter.innerText = ` ${Math.ceil(count)}`;
-          setTimeout(updateCount, 20);
+          setTimeout(updateCount, 25);
         } else {
           counter.innerText = target;
           if (target >= 120) {
