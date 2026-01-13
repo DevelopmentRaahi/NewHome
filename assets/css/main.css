@@ -4147,7 +4147,8 @@ cursor: pointer;
  
 .hero-banner {
   background: #ffffff;
-  padding: 60px 0;
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .hero-container {
@@ -4215,7 +4216,7 @@ cursor: pointer;
   display: inline-block;
   background: #eb8b25;
   color: #ffffff;
-  padding: 14px 30px;
+  padding: 10px 25px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
@@ -4228,14 +4229,14 @@ cursor: pointer;
 }
 
 .hero-image img {
-  max-width: 110%;
+  max-width:100%;
   border-radius: 20px;
 }
 
 .discount-badge {
   position: absolute;
   top: 20px;
-  right: -30px;
+  right: 20px;
   background: #eb8b25;
   color: #ffffff;
   padding: 16px 18px;
