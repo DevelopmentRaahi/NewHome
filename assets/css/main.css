@@ -144,7 +144,17 @@ h6 {
   color: #000;
   font-weight: 600;
   text-decoration: underline;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
+
+.explore-m:hover {
+  background: #ffc800;   
+  color: #000;      
+  text-decoration: none;
+}
+
 
 
 @media (max-width: 400px) {
