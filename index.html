@@ -64,13 +64,13 @@
   </div>
 
 
-  <div class="neon-bar-m">
+  <!-- <div class="neon-bar-m">
   <p>
     Winter Discounts on Multi-Year Service Registrations!
    <span class="timer-m" id="countdown-m"></span>
     <a href="#" class="explore-m">Explore</a>
   </p>
-</div>
+</div> -->
 
 
 
@@ -230,6 +230,31 @@
 
     </div>
   </header>
+
+
+<!-- popup -->
+
+<div class="popup-overlay-m" id="popupOverlay-m">
+  <div class="popup-box-m">
+    <span class="popup-close-m" onclick="closePopup()">×</span>
+
+    <h2>❄ Winter Sale</h2>
+    <p class="popup-offer-m">on <strong> Multi-Year </strong> Service Registrations</p>
+
+    <div class="popup-timer-m" id="popupTimer-m">
+      00 : 00 : 00
+    </div>
+
+    <a href="#" class="popup-btn-m">Get Offer</a>
+    <p class="popup-skip-m">No thanks</p>
+  </div>
+</div>
+
+
+
+
+
+
 
 
 
@@ -1640,30 +1665,34 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-<!-- winter sale -->
- <script>
-  // Set end date (change as needed)
-  const endDate = new Date("Jan 20, 2026 23:59:59").getTime();
+  <!-- popup -->
 
-  const timer = setInterval(() => {
+  <script>
+  const endTime = new Date().getTime() + (15 * 60 * 1000); // 15 min
+
+  const timerInterval = setInterval(() => {
     const now = new Date().getTime();
-    const distance = endDate - now;
+    const distance = endTime - now;
 
-    if (distance < 0) {
-      clearInterval(timer);
-      document.getElementById("countdown-m").innerHTML = "Offer Ended";
+    if (distance <= 0) {
+      clearInterval(timerInterval);
+      document.getElementById("popupTimer-m").innerHTML = "Offer Ended";
       return;
     }
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const sec = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown-m").innerHTML =
-      `${days}d : ${hours}h : ${minutes}m : ${seconds}s`;
+    document.getElementById("popupTimer-m").innerHTML =
+      `00 : ${String(min).padStart(2,'0')} : ${String(sec).padStart(2,'0')}`;
   }, 1000);
+
+  function closePopup() {
+    document.getElementById("popupOverlay-m").style.display = "none";
+  }
 </script>
+
+
 
 
   <!-- Main JS File -->
