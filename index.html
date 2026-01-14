@@ -62,6 +62,20 @@
       </div>
     </div>
   </div>
+
+
+  <div class="neon-bar-m">
+  <p>
+    Winter Discounts on Multi-Year Service Registrations!
+   <span class="timer-m" id="countdown-m"></span>
+    <a href="#" class="explore-m">Explore</a>
+  </p>
+</div>
+
+
+
+
+
   <header id="header" class="header d-flex align-items-center sticky-top w-100">
     <div class="container-fluid position-relative d-flex_header">
 
@@ -217,44 +231,6 @@
     </div>
   </header>
 
-
-
-<!-- banner -->
-
-<section class="hero-banner">
-  <div class="hero-container">
-
-    <!-- LEFT CONTENT -->
-    <div class="hero-content">
-      <span class="offer-tag">Winter Sale</span>
-
-      <h1>
-        Winter Discounts on Multi-Year  <br>
-        Service Registrations
-      </h1>
-
-      <ul class="hero-points">
-        <li>High-performance hosting & servers</li>
-        <li>Free SSL, backups & expert support</li>
-        <li>Reliable solutions for growing businesses</li>
-      </ul>
-
-      <div class="hero-price">
-        <span>Starting at</span>
-        <strong>₹69/mo</strong>
-      </div>
-
-      <a href="#" class="hero-btn">View Plans</a>
-    </div>
-
-    <!-- RIGHT VISUAL -->
-    <div class="hero-image">
-      <img src="./assets/img/wooden-b.jpg" alt="Hosting illustration">
-      <div class="discount-badge">Up to<br><b>80% OFF</b></div>
-    </div>
-
-  </div>
-</section>
 
 
 
@@ -1664,6 +1640,30 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
+<!-- winter sale -->
+ <script>
+  // Set end date (change as needed)
+  const endDate = new Date("Jan 20, 2026 23:59:59").getTime();
+
+  const timer = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = endDate - now;
+
+    if (distance < 0) {
+      clearInterval(timer);
+      document.getElementById("countdown-m").innerHTML = "Offer Ended";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown-m").innerHTML =
+      `${days}d : ${hours}h : ${minutes}m : ${seconds}s`;
+  }, 1000);
+</script>
 
 
   <!-- Main JS File -->
