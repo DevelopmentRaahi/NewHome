@@ -4316,50 +4316,60 @@ cursor: pointer;
   }
 }
 
-
 /* popup */
+
+/* ===== POPUP OVERLAY ===== */
 .popup-overlay-m {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
 }
 
+/* ===== POPUP BOX ===== */
 .popup-box-m {
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   background: linear-gradient(135deg, #ff7a00, #ff9f45);
   color: #fff;
   text-align: center;
-  padding: 28px 24px;
+  padding: 26px 22px;
   border-radius: 18px;
   position: relative;
-  box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
   animation: scaleIn-m 0.4s ease;
 }
 
+/* ===== HEADING ===== */
 .popup-box-m h2 {
   margin: 0 0 8px;
-  font-size: 26px;
+  font-size: 24px;
+  line-height: 1.2;
 }
 
+/* ===== OFFER TEXT ===== */
 .popup-offer-m {
-  font-size: 18px;
-  margin-bottom: 16px;
+  font-size: 16px;
+  margin-bottom: 14px;
+  line-height: 1.4;
 }
 
+/* ===== TIMER ===== */
 .popup-timer-m {
   display: inline-block;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   padding: 10px 18px;
   border-radius: 10px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
+/* ===== CTA BUTTON ===== */
 .popup-btn-m {
   display: inline-block;
   background: #000;
@@ -4368,19 +4378,24 @@ cursor: pointer;
   border-radius: 8px;
   text-decoration: none;
   font-size: 15px;
+  transition: background 0.3s ease;
 }
 
 .popup-btn-m:hover {
   background: #222;
 }
 
+/* ===== NO THANKS ===== */
 .popup-skip-m {
-  margin-top: 10px;
-  font-size: 16px;
-  opacity: 0.85;
+  display: block;
+  margin-top: 14px;
+  font-size: 14px;
+  opacity: 0.9;
   cursor: pointer;
+  text-decoration: underline;
 }
 
+/* ===== CLOSE ICON ===== */
 .popup-close-m {
   position: absolute;
   top: 10px;
@@ -4389,9 +4404,10 @@ cursor: pointer;
   cursor: pointer;
 }
 
+/* ===== ANIMATION ===== */
 @keyframes scaleIn-m {
   from {
-    transform: scale(0.85);
+    transform: scale(0.9);
     opacity: 0;
   }
   to {
@@ -4399,4 +4415,12 @@ cursor: pointer;
     opacity: 1;
   }
 }
+
+/* ===== MOBILE SAFE ===== */
+@media (max-width: 420px) {
+  .popup-box-m {
+    margin: 0 16px;
+  }
+}
+
 
