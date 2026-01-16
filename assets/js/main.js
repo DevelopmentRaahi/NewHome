@@ -403,4 +403,38 @@
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
 
+  /**
+   * Popup Timer
+   */
+  const popupTimer = document.getElementById("popupTimer-m");
+  const popupOverlay = document.getElementById("popupOverlay-m");
+  const closePopupX = document.getElementById("popup-close-m");
+
+  const endTime = new Date("Jan 30, 2026 23:59:59").getTime();
+  
+  const timerInterval = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = endTime - now;
+
+    if (distance <= 0) {
+      clearInterval(timerInterval);
+      popupTimer &&( popupTimer.innerHTML = "Offer Ended");
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    popupTimer && (popupTimer.innerHTML =
+      `${days}d : ${String(hours).padStart(2,'0')}h : ${String(minutes).padStart(2,'0')}m : ${String(seconds).padStart(2,'0')}s`);
+  }, 1000);
+
+ popupOverlay && popupOverlay.addEventListener("click", closePopup);
+ closePopupX && closePopupX.addEventListener("click", closePopup);
+  function closePopup() {
+    popupOverlay.style.display = "none";
+  }
+
 })();

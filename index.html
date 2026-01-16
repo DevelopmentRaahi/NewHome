@@ -225,7 +225,7 @@
 
 <div class="popup-overlay-m" id="popupOverlay-m">
   <div class="popup-box-m">
-    <span class="popup-close-m" onclick="closePopup()">×</span>
+    <span class="popup-close-m" id="popup-close-m">×</span>
 
     <h2>❄ Winter Sale</h2>
     <p class="popup-offer-m">on <strong> Multi-Year </strong> Service Registrations</p>
@@ -235,17 +235,9 @@
     </div>
 
     <a href="https://domgys.in/google-workspace.html" class="popup-btn-m">Get Offer</a>
-    <p class="popup-skip-m" onclick="closePopup()">No thanks</p>
+    <p class="popup-skip-m">No thanks</p>
   </div>
 </div>
-
-
-
-
-
-
-
-
 
 
   <main class="main" id="main">
@@ -1653,38 +1645,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- popup -->
-
-  <script>
-  // Set offer end date: 30 January (change year if needed)
-  const endTime = new Date("Jan 30, 2026 23:59:59").getTime();
-
-  const timerInterval = setInterval(() => {
-    const now = new Date().getTime();
-    const distance = endTime - now;
-
-    if (distance <= 0) {
-      clearInterval(timerInterval);
-      document.getElementById("popupTimer-m").innerHTML = "Offer Ended";
-      return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("popupTimer-m").innerHTML =
-      `${days}d : ${String(hours).padStart(2,'0')}h : ${String(minutes).padStart(2,'0')}m : ${String(seconds).padStart(2,'0')}s`;
-  }, 1000);
-
-  function closePopup() {
-    document.getElementById("popupOverlay-m").style.display = "none";
-  }
-</script>
-
-
 
   <!-- Main JS File -->
   <script src="assets/js/main.js" defer></script>
